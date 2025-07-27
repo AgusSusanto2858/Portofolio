@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+}
+
+@layer components {
+    .nav-link-active {
+        @apply bg-gradient-to-r from-primary-500 to-secondary-500 text-white shadow-lg transform -translate-y-0.5;
+    }
+    
+    .btn-primary {
+        @apply bg-gradient-to-r from-primary-500 to-secondary-500 hover:from-primary-600 hover:to-secondary-600 text-white font-medium py-2 px-6 rounded-full transition-all duration-300 hover:shadow-lg hover:transform hover:-translate-y-1;
+    }
+    
+    .card-hover {
+        @apply transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl;
+    }
+    
+    .gradient-text {
+        @apply bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent;
+    }
+}
