@@ -140,7 +140,7 @@ const Projects = () => {
                         My Recent <span className="gradient-text">Works</span>
                     </h2>
                     <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-8">
-                        Here are a few projects I've worked on recently. Each project represents a unique challenge and learning experience.
+                        Berikut adalah beberapa proyek yang baru-baru ini saya kerjakan. Setiap proyek mewakili tantangan unik dan pengalaman belajar.
                     </p>
                     <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 mx-auto"></div>
                 </div>
