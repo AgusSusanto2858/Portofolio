@@ -25,13 +25,14 @@ const Projects = () => {
             description: 'Aplikasi sederhana untuk mengenalkan hewan ternak keanak-anak dalam bahasa indonesia, inggris dan mengenalkan suara hewan tersebut.',
             image: pHewanTernakImg,
             technologies: [
-                { icon: SiAndroidstudio, name: 'Android Studio', color: 'text-green-400' }, // Android Studio hijau
-                { icon: DiJava, name: 'Java', color: 'text-orange-500' }, // Java oranye/merah
-                { icon: SiCodeigniter, name: 'XML', color: 'text-orange-400' } // Alternatif untuk XML
+                { icon: SiAndroidstudio, name: 'Android Studio', color: 'text-green-400' },
+                { icon: DiJava, name: 'Java', color: 'text-orange-500' },
+                { icon: SiCodeigniter, name: 'XML', color: 'text-orange-400' }
             ],
             github: 'https://drive.google.com/file/d/1_qTWIpvguM97ANl-4kyO_A3XNu1UgvHG/view?usp=sharing',
             demo: 'https://drive.google.com/file/d/1_qTWIpvguM97ANl-4kyO_A3XNu1UgvHG/view?usp=sharing',
-            featured: true
+            featured: true,
+            codeOnly: true // Flag khusus untuk proyek ini
         }
     ];
 
@@ -64,14 +65,16 @@ const Projects = () => {
                     >
                         <AiFillGithub size={20} />
                     </a>
-                    <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-white/20 backdrop-blur-sm rounded-full p-3 text-white hover:bg-white/30 transition-all duration-300 hover:scale-110"
-                    >
-                        <AiOutlineEye size={20} />
-                    </a>
+                    {!project.codeOnly && (
+                        <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white/20 backdrop-blur-sm rounded-full p-3 text-white hover:bg-white/30 transition-all duration-300 hover:scale-110"
+                        >
+                            <AiOutlineEye size={20} />
+                        </a>
+                    )}
                 </div>
 
                 {/* Featured Badge */}
