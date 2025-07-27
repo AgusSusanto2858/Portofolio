@@ -55,7 +55,7 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
-                {/* Overlay Buttons */}
+                {/* Overlay Buttons - Conditional rendering */}
                 <div className="absolute inset-0 flex items-center justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <a
                         href={project.github}
@@ -65,6 +65,7 @@ const Projects = () => {
                     >
                         <AiFillGithub size={20} />
                     </a>
+                    {/* Tampilkan tombol Demo hanya jika bukan codeOnly */}
                     {!project.codeOnly && (
                         <a
                             href={project.demo}
@@ -109,7 +110,7 @@ const Projects = () => {
                     ))}
                 </div>
 
-                {/* Action Buttons */}
+                {/* Action Buttons - Conditional rendering */}
                 <div className="flex space-x-3">
                     <a
                         href={project.github}
@@ -120,15 +121,17 @@ const Projects = () => {
                         <AiFillGithub />
                         <span>Code</span>
                     </a>
-                    <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center space-x-2 btn-primary"
-                    >
-                        <AiOutlineEye />
-                        <span>Demo</span>
-                    </a>
+                    {!project.codeOnly && (
+                        <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center space-x-2 btn-primary"
+                        >
+                            <AiOutlineEye />
+                            <span>Demo</span>
+                        </a>
+                    )}
                 </div>
             </div>
         </div>
