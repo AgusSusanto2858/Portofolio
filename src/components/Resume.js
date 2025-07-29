@@ -28,7 +28,7 @@ const CVPage = () => {
         location: "Bekasi, Indonesia",
         phone: "(+62) 813-8514-3983",
         email: "agussusanto2858@gmail.com",
-        website: "ahmadfauzi.vercel.app",
+        website: "https://portofolio-flax-theta-82.vercel.app",
         github: "AgusSusanto2858",
         linkedin: "Agus Susanto",
         twitter: "@agussusanto2858"
