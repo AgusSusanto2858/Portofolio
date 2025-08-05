@@ -7,7 +7,7 @@ import {
     AiOutlineGlobal, 
     AiOutlineGithub, 
     AiOutlineLinkedin, 
-    AiOutlineTwitter, 
+    AiOutlineInstagram, 
     AiOutlineEnvironment 
 } from 'react-icons/ai';
 
@@ -31,7 +31,7 @@ const CVPage = () => {
         website: "https://portofolio-flax-theta-82.vercel.app",
         github: "AgusSusanto2858",
         linkedin: "Agus Susanto",
-        twitter: "@agussusanto2858"
+        instagram: "@agussusanto2858"
     };
 
     const workExperience = [
@@ -153,19 +153,47 @@ const CVPage = () => {
                                     </div>
                                     <div className="flex items-center">
                                         <AiOutlineGlobal className="w-4 h-4 mr-1" />
-                                        {personalInfo.website}
+                                        <a 
+                                            href={personalInfo.website} 
+                                            className="hover:text-pink-500 transition-colors"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Portfolio
+                                        </a>
                                     </div>
                                     <div className="flex items-center">
                                         <AiOutlineGithub className="w-4 h-4 mr-1" />
-                                        {personalInfo.github}
+                                        a 
+                                            href={`https://github.com/${personalInfo.github}`} 
+                                            className="hover:text-pink-500 transition-colors"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {personalInfo.github}
+                                        </a>
                                     </div>
                                     <div className="flex items-center">
                                         <AiOutlineLinkedin className="w-4 h-4 mr-1" />
-                                        {personalInfo.linkedin}
+                                        <a 
+                                            href={`https://linkedin.com/in/agussusanto2858`} 
+                                            className="hover:text-pink-500 transition-colors"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {personalInfo.linkedin}
+                                        </a>
                                     </div>
                                     <div className="flex items-center">
-                                        <AiOutlineTwitter className="w-4 h-4 mr-1" />
-                                        {personalInfo.twitter}
+                                        <AiOutlineInstagram className="w-4 h-4 mr-1" />
+                                        <a 
+                                            href={`https://instagram.com/agussusanto2858`} 
+                                            className="hover:text-pink-500 transition-colors"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {personalInfo.instagram}
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -298,3 +326,4 @@ const CVPage = () => {
 };
 
 export default CVPage;
+
