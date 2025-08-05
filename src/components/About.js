@@ -6,17 +6,17 @@ import { SiTypescript, SiNextdotjs, SiTailwindcss, SiFirebase, SiPostgresql, SiD
 const About = () => {
     const skills = [
         { icon: DiJavascript1, name: 'JavaScript', color: 'text-yellow-400' },
-        { icon: SiTypescript, name: 'TypeScript', color: 'text-blue-400' },
+        { icon: SiTypescript, name: 'TypeScript', color: 'text-blue-500' },
         { icon: DiReact, name: 'React', color: 'text-cyan-400' },
-        { icon: SiNextdotjs, name: 'Next.js', color: 'text-white' },
-        { icon: DiNodejs, name: 'Node.js', color: 'text-green-400' },
-        { icon: DiPython, name: 'Python', color: 'text-yellow-300' },
-        { icon: SiTailwindcss, name: 'Tailwind CSS', color: 'text-cyan-300' },
-        { icon: DiMongodb, name: 'MongoDB', color: 'text-green-500' },
-        { icon: SiPostgresql, name: 'PostgreSQL', color: 'text-blue-300' },
-        { icon: SiFirebase, name: 'Firebase', color: 'text-orange-400' },
-        { icon: DiGit, name: 'Git', color: 'text-red-400' },
-        { icon: SiDocker, name: 'Docker', color: 'text-blue-500' }
+        { icon: SiNextdotjs, name: 'Next.js', color: 'text-gray-100' },
+        { icon: DiNodejs, name: 'Node.js', color: 'text-green-500' },
+        { icon: DiPython, name: 'Python', color: 'text-blue-400' },
+        { icon: SiTailwindcss, name: 'Tailwind CSS', color: 'text-teal-400' },
+        { icon: DiMongodb, name: 'MongoDB', color: 'text-green-600' },
+        { icon: SiPostgresql, name: 'PostgreSQL', color: 'text-blue-600' },
+        { icon: SiFirebase, name: 'Firebase', color: 'text-yellow-500' },
+        { icon: DiGit, name: 'Git', color: 'text-orange-600' },
+        { icon: SiDocker, name: 'Docker', color: 'text-blue-400' }
     ];
 
     const activities = [
@@ -132,5 +132,6 @@ const About = () => {
         </section>
     );
 };
+
 
 export default About;
