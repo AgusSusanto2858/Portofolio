@@ -164,7 +164,7 @@ const CVPage = () => {
                                     </div>
                                     <div className="flex items-center">
                                         <AiOutlineGithub className="w-4 h-4 mr-1" />
-                                        a 
+                                        <a 
                                             href={`https://github.com/${personalInfo.github}`} 
                                             className="hover:text-pink-500 transition-colors"
                                             target="_blank"
@@ -326,4 +326,5 @@ const CVPage = () => {
 };
 
 export default CVPage;
+
 
