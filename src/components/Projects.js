@@ -29,8 +29,8 @@ const Projects = () => {
                 { icon: DiJava, name: 'Java', color: 'text-orange-500' },
                 { icon: SiCodeigniter, name: 'XML', color: 'text-orange-400' }
             ],
-            github: 'https://drive.google.com/file/d/1_qTWIpvguM97ANl-4kyO_A3XNu1UgvHG/view?usp=sharing',
-            demo: 'https://drive.google.com/file/d/1_qTWIpvguM97ANl-4kyO_A3XNu1UgvHG/view?usp=sharing',
+            github: 'https://github.com/AgusSusanto2858/pengenal-hewan-ternak.git',
+            demo: '',
             featured: true,
             codeOnly: true // Flag khusus untuk proyek ini
         }
@@ -175,3 +175,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
